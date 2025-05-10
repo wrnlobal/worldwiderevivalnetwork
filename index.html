@@ -15,32 +15,53 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f7f9fb;
-      color: #333;
+      background: #121212;
+      color: #fff;
     }
     header {
-      background: #0f172a;
+      background: #1e1e1e;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
-    nav a {
+    header nav a {
       margin-left: 1.5rem;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
+      text-transform: uppercase;
+    }
+    header nav a:hover {
+      color: #facc15;
     }
     .hero {
       background: url('https://images.unsplash.com/photo-1533106418989-88406c7cc8e0?fit=crop&w=1470&q=80') no-repeat center center/cover;
       color: #fff;
-      padding: 6rem 2rem;
+      padding: 8rem 2rem;
       text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 4rem;
       margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #facc15;
+      color: #0f172a;
+      font-weight: bold;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-button:hover {
+      background: #e0c100;
     }
     .section {
       padding: 4rem 2rem;
@@ -48,31 +69,42 @@
       margin: auto;
     }
     .section h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
-      color: #0f172a;
+      color: #facc15;
     }
     .card {
-      background: #fff;
+      background: #1e1e1e;
       border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, .08);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
       padding: 2rem;
       margin-bottom: 2rem;
+      color: #fff;
     }
     footer {
-      background: #0f172a;
+      background: #1e1e1e;
       color: #fff;
       text-align: center;
       padding: 2rem;
+      position: relative;
     }
-    .cta-button {
-      display: inline-block;
-      padding: .75rem 1.5rem;
-      background: #facc15;
-      color: #0f172a;
-      font-weight: bold;
-      border-radius: 8px;
+    footer p {
+      font-size: 0.9rem;
       margin-top: 1rem;
+      color: #aaa;
+    }
+    footer a {
+      color: #facc15;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      color: #e0c100;
+    }
+    .social-icons a {
+      margin: 0 1rem;
+      color: #fff;
+      font-size: 1.5rem;
       text-decoration: none;
     }
   </style>
@@ -147,8 +179,11 @@
   </section>
 
   <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/YourFacebookPage" target="_blank">Facebook</a>
+      <a href="https://www.tiktok.com/@wrnlobal" target="_blank">TikTok</a>
+    </div>
     <p>&copy; 2025 Worldwide Revival Network. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
